@@ -1,9 +1,7 @@
-before_install:
-  - sudo docker run hello-world
-  
 script:
   - echo "running build script"
+  - docker run -v `pwd`:/book tomkwong/jupyter-book-tools build.sh
   
 after_success:
   - echo "successful"
-  
+ 
