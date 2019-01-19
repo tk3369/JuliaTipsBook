@@ -1,0 +1,9 @@
+before_install:
+  - sudo docker run hello-world
+  
+script:
+  - echo "running build script"
+  
+after_success:
+  - echo "successful"
+  
