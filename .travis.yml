@@ -1,6 +1,0 @@
-script:
-  - docker run -v `pwd`:/book tomkwong/jupyter-book-tools /bin/bash -c 'cd /book; /bin/bash build.sh'
-  
-after_success:
-  - echo "successful"
- 
